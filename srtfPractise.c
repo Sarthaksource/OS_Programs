@@ -90,7 +90,7 @@ int main()
 				p[min_index].ct = current_time;
 				p[min_index].tat = p[min_index].ct - p[min_index].at;
 				p[min_index].wt = p[min_index].tat - p[min_index].bt;
-				p[min_index].rt = p[min_index].st;
+				p[min_index].rt = p[min_index].st - p[min_index].at;
 
 				ttat += p[min_index].tat;
 				twt += p[min_index].wt;
