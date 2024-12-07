@@ -85,7 +85,7 @@ int main()
 			twt += p[min_index].wt;
 			trt += p[min_index].rt;
 
-			total_idle_time = (is_first==true) ? 0 : p[min_index].st - prev_time;
+			total_idle_time += (is_first==true) ? 0 : p[min_index].st - prev_time;
 
 			is_first = false;
 			current_time = p[min_index].ct;
